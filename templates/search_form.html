@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Form</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/search.css') }}">
+</head>
+<body>
+    <div>
+        <h2>Result Form</h2>
+        <form action="/search" method="post">
+            <label for="query">Enter your Student Roll No:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit">Show Result</button>
+        </form>
+    </div>
+</body>
+</html>
